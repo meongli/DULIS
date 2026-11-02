@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>공지사항 | 대구대학교 문헌정보학과</title>
+<meta name="description" content="대구대학교 문헌정보학과의 학사, 취업, 행사 공지사항을 확인하세요.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="공지사항 | 대구대학교 문헌정보학과">
+<meta property="og:description" content="학사·취업·행사 소식">
+<meta name="theme-color" content="#8fd9ff">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%231f4dff' d='M12 1.5c.9 6.4 4.1 9.6 10.5 10.5-6.4.9-9.6 4.1-10.5 10.5C11.1 16.1 7.9 12.9 1.5 12 7.9 11.1 11.1 7.9 12 1.5z'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gugi&family=Orbit&family=Orbitron:wght@500;700;900&family=Silkscreen&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>document.documentElement.classList.add('js')</script>
+<script src="data/site-data.js" defer></script>
+<script src="assets/js/app.js" defer></script>
+</head>
+<body data-page="notice">
+<main id="main">
+
+  <section class="subhero" data-sky>
+    <div class="wrap">
+      <nav class="crumb" aria-label="현재 위치"><a href="index.html">HOME</a><span>학과 생활</span><span aria-current="page">공지사항</span></nav>
+      <p class="eyebrow"><svg class="ico" aria-hidden="true"><use href="#i-star"></use></svg>NOTICE</p>
+      <h1 class="h-display chrome">공지사항</h1>
+      <p class="lead">학과 홈페이지 학과공지에 올라온 최근 소식 20건이에요. 각 공지에서 원문과 첨부파일로 바로 이동할 수 있어요.</p>
+    </div>
+  </section>
+
+  <section class="sec" id="notice-top" style="scroll-margin-top:100px">
+    <div class="wrap">
+      <div class="toolbar">
+        <div class="chips" id="notice-chips" role="group" aria-label="카테고리"></div>
+        <form class="search" id="notice-form" role="search">
+          <svg class="ico" aria-hidden="true"><use href="#i-search"></use></svg>
+          <label class="sr-only" for="notice-search">공지 제목 검색</label>
+          <input type="search" id="notice-search" placeholder="제목 검색 후 Enter">
+        </form>
+      </div>
+      <p class="count" id="notice-count" aria-live="polite"></p>
+      <div class="win t-pearl">
+        <div class="win-bar"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="bar-title">NOTICE.LOG</span><span class="ctrl" aria-hidden="true"><i>_</i><i>□</i><i>×</i></span></div>
+        <ul class="nlist" id="notice-list"></ul>
+      </div>
+      <nav class="pager" id="pager" aria-label="페이지 이동"></nav>
+      <p class="note" style="justify-content:center"><svg class="ico" aria-hidden="true"><use href="#i-ext"></use></svg><a href="https://lis.daegu.ac.kr/article/table_01/list" target="_blank" rel="noopener">학과 홈페이지에서 전체 공지 보기 (2026-11-02 기준 목록)</a></p>
+    </div>
+  </section>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>교과목 안내 | 대구대학교 문헌정보학과</title>
+<meta name="description" content="대구대학교 문헌정보학과 전공 교과목을 학년·분야별로 찾아보고 과목 개요를 확인하세요.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="교과목 안내 | 대구대학교 문헌정보학과">
+<meta property="og:description" content="학년·분야별 전공 교과목 검색">
+<meta name="theme-color" content="#8fd9ff">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%231f4dff' d='M12 1.5c.9 6.4 4.1 9.6 10.5 10.5-6.4.9-9.6 4.1-10.5 10.5C11.1 16.1 7.9 12.9 1.5 12 7.9 11.1 11.1 7.9 12 1.5z'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gugi&family=Orbit&family=Orbitron:wght@500;700;900&family=Silkscreen&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>document.documentElement.classList.add('js')</script>
+<script src="data/site-data.js" defer></script>
+<script src="assets/js/app.js" defer></script>
+</head>
+<body data-page="courses">
+<main id="main">
+
+  <section class="subhero" data-sky>
+    <div class="wrap">
+      <nav class="crumb" aria-label="현재 위치"><a href="index.html">HOME</a><span>교육</span><span aria-current="page">교과목 안내</span></nav>
+      <p class="eyebrow"><svg class="ico" aria-hidden="true"><use href="#i-star"></use></svg>COURSES</p>
+      <h1 class="h-display chrome">교과목 안내</h1>
+      <p class="lead">궁금한 과목을 검색하거나 학년·분야로 골라 보세요. 과목을 누르면 설명이 펼쳐집니다.</p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="chips" id="track-chips" role="group" aria-label="과목 분야 필터" style="margin-bottom:16px"></div>
+      <div class="toolbar">
+        <label class="sr-only" for="year-select">학년 선택</label>
+        <select class="select" id="year-select">
+          <option value="all">전체 학년</option>
+          <option value="1">1학년</option>
+          <option value="2">2학년</option>
+          <option value="3">3학년</option>
+          <option value="4">4학년</option>
+        </select>
+        <div class="search">
+          <svg class="ico" aria-hidden="true"><use href="#i-search"></use></svg>
+          <label class="sr-only" for="course-search">과목 검색</label>
+          <input type="search" id="course-search" placeholder="과목명 또는 키워드 검색">
+        </div>
+      </div>
+      <p class="count" id="course-count" aria-live="polite"></p>
+      <div id="course-list"></div>
+      <p class="note"><svg class="ico" aria-hidden="true"><use href="#i-ext"></use></svg><a href="https://lis.daegu.ac.kr/curriculum/detail" target="_blank" rel="noopener">출처: 학과 홈페이지 교육과정·교과목 설명 (2026-11-02 확인)</a></p>
+      <p class="note"><svg class="ico" aria-hidden="true"><use href="#i-info"></use></svg>분야 구분은 이 사이트의 분류예요. 실제 개설 여부는 학기별 수강편람을 확인해 주세요.</p>
+    </div>
+  </section>
+
+</main>
+</body>
+</html>
